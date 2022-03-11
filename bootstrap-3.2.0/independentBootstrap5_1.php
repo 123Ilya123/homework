@@ -19,9 +19,18 @@
 
 
      <div class="dropdown">
+
         <button class="btn btn-default" type ="button" data-toggle="dropdown">Меню 
              <span class="caret"></span> 
         </button>
+
+        <ul class ="dropdown-menu"
+
+
+
+
+
+
         <ul class="dropdown-menu"> 
         <li class="dropdown-header">Первое меню</li> 
         <li><a href="#">Пункт первого меню 1</a></li> 
@@ -31,6 +40,7 @@
         <li class="disabled"><a href="#">Пункт второго меню 1</a></li> 
         </ul> 
         </div>
+     
 <?php 
     require "PAPKA/header.php";
 ?>
