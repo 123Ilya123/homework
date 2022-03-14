@@ -2,6 +2,9 @@
     require "PAPKA/footear.php";
 ?>
 
+
+
+
 <ul class="nav nav-tabs" role="tablist"> 
 <li class="active"><a href="#">Первая</a></li> 
 <li><a href="#">Вторая</a></li> 
