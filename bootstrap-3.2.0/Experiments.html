@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments</title>
+    <script src="http://code.jquery.com/jquery-latest.js">
+    </script>
+
+    <script>
+        $(document).ready(function (){
+            $("button").click(function(){
+                $(".MsoNormal").hide();
+            });
+            $("button").click(function(){
+                $(".MsoNormal").show(); 
+            }); 
+        }); 
+    </script>
+</head>
+
+<body>
+    
+<h2 class="test"> бла бла бла</h2>
+<p class="test"> бла2 бла2 бла2</p>
+<p> bla bla lba</p>
+<button>Click me</button>
+
+</body>  <!---чтобы они то скрывали, то отображали нечетные элементы с классом
+    MsoNormal--->
+</html>
