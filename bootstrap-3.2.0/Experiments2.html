@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments2</title>
+    <script src="http://code.jquery.com/jquery-latest.js">
+    </script>
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function () {
+            $("p").dblclick(function () {
+                 $('[center]').toggle();
+             });
+        });
+       </script>
+     <h1>1</h1>
+   <div>
+       <p>If you double-click on me, I will disappear.</p>
+       <p  align="center">Должна исчезнуть и появиться</p>
+       <p>Click me too!</p>
+      
+    </div> <!---не раб-->
+
+<!------------->
+
+      <!--наведение мышки на элемент   он должен скрываться--->
+<script>
+    $(document).ready(function(){
+        $("#zz").mouseenter(function () {
+            $('#zz').hide(1000);
+            $('#zz').show(5000);
+        });
+    });
+</script>
+
+<h1>2</h1>
+<div>
+  <p id="zz">
+    <img src="https://yandex.ru/images/search?pos=23&from=tabbar&img_url=https%3A%2F%2Fw-dog.ru%2Fwallpapers%2F11%2F13%2F296498169890718%2Fkameliya-cvetok-rozovyj-makro.jpg&text=%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%B5%D0%BA&rpt=simage" alt="цветочек"  width="550" height="200"> 
+  </p>
+</div>
+
+
+
+<!---добавить обработку события «изменение 
+размера окна». При срабатывании этого метода скрыть с документа все элемента со 
+ссылками (href).
+--->
+<script>
+    $(document ).ready(function (){
+        $(window).resize (function(){
+                $('[href]').hide(1000);
+        });
+    });
+</script>
+
+<h1>3</h1>
+<div>
+<p>
+    "resize" (срабатывает при изменении размеров окна браузера), 
+    или запускает это событие на выбранный элемент.
+</p>
+    <ul>
+        <li> <a href="https://ukraina.ru/?">новости </a> </li>
+        <li> <a href="https://clashroyale.com/">клеш рояль</a> </li>
+    </ul>
+</div>
+
+
+<!---случайным образом менять цвет этого 
+поля-->
+<script>
+    $(document ).ready (function(){
+        $("input").keypress(function () {
+            var max = 255;
+            var min = 0;
+	             var c= Math.floor(Math.random() * (max - min + 1)) + min;;
+	            var m= Math.floor(Math.random() * (max - min + 1)) + min;;
+	            var n= Math.floor(Math.random() * (max - min + 1)) + min;;
+	            var ccolor = "rgb("+ c + "," + m + "," + n +")";
+                    $("input").css("background-color", ccolor); 
+
+        });
+    });
+</script>
+
+<h1>4</h1>
+
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+
+
+
+
+</body> 
+</html> 

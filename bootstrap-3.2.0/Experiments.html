@@ -10,23 +10,88 @@
 
     <script>
         $(document).ready(function (){
-            $("button").click(function(){
-                $(".MsoNormal").hide();
+            $("#but1").click(function(){
+                $(".MsoNormal:even").hide();
             });
-            $("button").click(function(){
-                $(".MsoNormal").show(); 
+            $("#but2").click(function(){
+                $(".MsoNormal:even").show(); 
             }); 
         }); 
     </script>
 </head>
-
-<body>
-    
-<h2 class="test"> бла бла бла</h2>
-<p class="test"> бла2 бла2 бла2</p>
-<p> bla bla lba</p>
-<button>Click me</button>
-
-</body>  <!---чтобы они то скрывали, то отображали нечетные элементы с классом
+ <!---чтобы они то скрывали, то отображали нечетные элементы с классом
     MsoNormal--->
+<body>
+    <!--- odd выбирает каждый элемент с нечетным индексом   even-четным-->
+<h2 class="MsoNormal"> бла бла бла</h2>
+<p class="MsoNormal"> бла2 бла2 бла2</p>
+<p> bla bla lba</p>
+<button id="but1">скрывали</button>
+<button id="but2"> отображали</button>
+
+
+
+
+<script>
+    $(  document).ready (function(){
+        $('#but3').click (function(){
+            $("tr:odd").hide();
+        });
+        $("#but4").click(function(){
+            $("tr:odd").show();
+        });
+    });
+</script>
+
+<table>
+    <tr>
+        <td>1</td> <td>2</td>
+    </tr>
+
+    <tr>
+        <td>3чет</td> <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td> <td>6</td>
+    </tr>
+    <tr>
+        <td>7чет</td> <td>8</td>
+    </tr>
+</table>
+<button id="but3"> скрывали четные</button>
+<button id="but4"> отображали четные</button>
+
+
+<script>
+    $(document).ready(function(){
+       $('#but5').click (function(){
+          $("[href]") .hide();
+        });
+        $('#but6').click (function(){
+            $("[href]").show();
+       }) ;
+    });
+</script>
+
+<button id="but5">скрывали</button>
+<button id="but6"> отображали</button>
+<a href="#">Ромашки</a>
+
+
+<script>
+    $ (document).ready (function() {
+        $('#but7').click (function(){
+            $('[align="center"]') .hide();
+        });
+        $('#but8').click (function(){
+            $('[align="center"]') .show();
+        });
+    });
+</script>
+<div align="center"> Приятно, граждане, наблюдать, как интерактивные прототипы лишь добавляют</div>
+<p align="center">  фракционных разногласий и преданы социально-демократической анафеме.  </p>
+<button id ="but7"> ck</button>
+<button id ="but8"> ot</button>
+
+</body> 
 </html>
